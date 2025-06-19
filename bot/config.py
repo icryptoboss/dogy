@@ -17,13 +17,13 @@ def is_enabled(value, default):
 
 
 class Config(object):
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", "25679601"))
+    API_HASH = os.environ.get("API_HASH", "105e12ce694578ac241c66d267caee87")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7874207255:AAHpnRakHABD67whsLmNWJNel69FtSRqQf0")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "tg_bot")
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://boss:w5dqmDzHeb0TaFUO@cluster0.pxyuklg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1391520393"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002578433766"))
     WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "False"), False)
     WEBHOOK = True  # Don't change this
     PORT = int(os.environ.get("PORT", 8000))
